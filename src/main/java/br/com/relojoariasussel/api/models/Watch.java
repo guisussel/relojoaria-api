@@ -14,7 +14,11 @@ public class Watch {
     private String caseMaterial;
     private String strapMaterial;
     private String type;
-    private String mechanism;
+
+    @ManyToOne
+    @JoinColumn(name = "mechanism_id")
+    private Mechanism mechanism;
+
     private String caseColor;
     private String strapColor;
     private String dialColor;
@@ -74,11 +78,11 @@ public class Watch {
         this.type = type;
     }
 
-    public String getMechanism() {
+    public Mechanism getMechanism() {
         return mechanism;
     }
 
-    public void setMechanism(String mechanism) {
+    public void setMechanism(Mechanism mechanism) {
         this.mechanism = mechanism;
     }
 
