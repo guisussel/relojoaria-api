@@ -1,7 +1,7 @@
 package br.com.relojoariasussel.api.services;
 
 import br.com.relojoariasussel.api.models.Mechanism;
-import br.com.relojoariasussel.api.repositories.MechanismRepository;
+import br.com.relojoariasussel.api.repository.MechanismRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

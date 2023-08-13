@@ -1,4 +1,4 @@
-package br.com.relojoariasussel.api.repositories;
+package br.com.relojoariasussel.api.repository;
 
 import br.com.relojoariasussel.api.models.Mechanism;
 import org.springframework.data.jpa.repository.JpaRepository;

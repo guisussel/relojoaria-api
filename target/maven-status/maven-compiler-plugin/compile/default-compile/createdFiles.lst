@@ -1,1 +1,13 @@
+br/com/relojoariasussel/api/repository/WatchRepository.class
+br/com/relojoariasussel/api/repository/MechanismRepository.class
+br/com/relojoariasussel/api/controllers/WatchController.class
+br/com/relojoariasussel/api/models/Watch.class
+br/com/relojoariasussel/api/controllers/TypeController.class
+br/com/relojoariasussel/api/models/Mechanism.class
+br/com/relojoariasussel/api/services/MechanismService.class
+br/com/relojoariasussel/api/repository/TypeRepository.class
+br/com/relojoariasussel/api/models/Type.class
 br/com/relojoariasussel/api/ApiApplication.class
+br/com/relojoariasussel/api/controllers/MechanismController.class
+br/com/relojoariasussel/api/services/WatchService.class
+br/com/relojoariasussel/api/services/TypeService.class

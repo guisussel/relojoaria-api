@@ -13,7 +13,10 @@ public class Watch {
     private Float value;
     private String caseMaterial;
     private String strapMaterial;
-    private String type;
+
+    @ManyToOne
+    @JoinColumn(name = "type_id")
+    private Type type;
 
     @ManyToOne
     @JoinColumn(name = "mechanism_id")
@@ -70,11 +73,11 @@ public class Watch {
         this.strapMaterial = strapMaterial;
     }
 
-    public String getType() {
+    public Type getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(Type type) {
         this.type = type;
     }
 
