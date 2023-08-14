@@ -11,8 +11,14 @@ public class Watch {
     private Long id;
     private String reference;
     private Float value;
-    private String caseMaterial;
-    private String strapMaterial;
+
+    @ManyToOne
+    @JoinColumn(name = "case_material_id")
+    private Material caseMaterial;
+
+    @ManyToOne
+    @JoinColumn(name = "strap_material_id")
+    private Material strapMaterial;
 
     @ManyToOne
     @JoinColumn(name = "type_id")
@@ -57,19 +63,19 @@ public class Watch {
         this.value = value;
     }
 
-    public String getCaseMaterial() {
+    public Material getCaseMaterial() {
         return caseMaterial;
     }
 
-    public void setCaseMaterial(String caseMaterial) {
+    public void setCaseMaterial(Material caseMaterial) {
         this.caseMaterial = caseMaterial;
     }
 
-    public String getStrapMaterial() {
+    public Material getStrapMaterial() {
         return strapMaterial;
     }
 
-    public void setStrapMaterial(String strapMaterial) {
+    public void setStrapMaterial(Material strapMaterial) {
         this.strapMaterial = strapMaterial;
     }
 
